@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,400;1,200&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+    <style>
+        :root {
+            --blue-sky: #1A73E8;
+            --dark-blue-sky:#1A65C7;
+            --white: #ffffff;
+            --very-light-pink: #EEEFF1;
+            --very-light-blue:#F5F8FE;
+            --sm: 10px;
+            --md: 16px;
+            --lg: 24px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: grid;
+            height: auto;
+            grid-template-columns: 1fr;
+            place-items: center;
+        }
+
+        .card-content {
+            width:450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            border: 1px solid var(--very-light-pink);
+            border-radius: 8px;
+        }
+
+        .card-content img {
+            width: 100px;
+            height: 50px;
+            margin-top: 30px;
+        }
+
+        .title {
+            margin-top: 0;
+
+        }
+        .subtitle {
+            margin: 0;
+            margin-bottom: 20px;
+            font-size: var(--md);
+        }
+
+        .form-container {
+            width: 100%;
+            padding: 15px;
+        }
+
+        .form-container input {
+            width:85%;
+            margin: 15px;
+            color: black;
+            border: 1px solid var(--very-light-pink);
+            border-radius: 8px;
+            text-align: left;
+            font-size: var(--md);
+            height: 40px;
+        }
+
+
+        .recovery a {
+            padding: 15px;
+            text-decoration: none;
+            color: var(--blue-sky);
+            font-weight: bold;
+        }
+
+        .recovery-device  a {
+            color: var(--blue-sky);
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .recovery-device {
+            padding: 15px;
+        }
+
+        .options{
+            width: 100%;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+
+        .options button {
+            margin: 15px;
+        }
+
+        .secondary-button {
+            background: var(--white);
+            border: 0;
+            color: var(--blue-sky);
+            font-weight: bold;
+            height: 30px;
+            width: 100px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .secondary-button:hover {
+            background: var(--very-light-blue);
+        }
+
+        .primary-button {
+            height: 30px;
+            width: 100px;
+            background: var(--blue-sky);
+            color: var(--white);
+            border: 0;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .primary-button:hover {
+            background: var(--dark-blue-sky);
+        }
+
+        .more-information {
+            display: flex;
+            width: 400px;
+            flex-direction: row;
+            font-size: 12px;
+        }
+        .more-information ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .more-information ul li {
+            list-style: none;
+            margin: 10px;
+        }
+
+        .more-information ul li a,
+        .more-information ul li p {
+            text-decoration: none;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card-content">
+            <img src="https://1000marcas.net/wp-content/uploads/2020/02/logo-Google.png" alt="google-logo">
+            <h1 class="title">Acceder</h1>
+            <p class="subtitle">Usa tu Cuenta de Google</p>
+            <div class="form-container">
+                <form action="">
+                    <label for="email"></label>
+                    <input type="text" placeholder="Correo electrónico o telefono">
+                    <p class="recovery"><a href="/">¿Olvidaste el correo electrónico?</a></p>
+                </form>
+            </div>
+            <p class="recovery-device">¿Esta no es tu computadora? Usa una ventana privada para acceder. <a href="/">Más información</a></p>
+
+            <div class="options">
+                <button class="secondary-button">Crear cuenta</button>
+                <button class="primary-button">Siguiente</button>
+            </div>
+        </div>
+        <div class="more-information">
+            <ul class="help">
+                <li><p>Español (latinoamérica)</p></li>
+                <li><span><a href="/">Ayuda</a></span></li>
+                <li><span><a href="/">Privacidad</a></span></li>
+                <li><span><a href="/">Condiciones</a></span></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
